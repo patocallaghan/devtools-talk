@@ -13,6 +13,7 @@
   },
   "devDependencies": {
     "docpad-plugin-eco": "2.1.0",
+    "docpad-plugin-ghpages": "2.4.4",
     "docpad-plugin-marked": "2.3.0"
   }
 }
