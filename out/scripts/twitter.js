@@ -1,4 +1,4 @@
-window['demo_api']= {
+window['demo_object']= {
   "statuses": [
     {
       "coordinates": null,

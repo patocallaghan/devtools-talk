@@ -9,12 +9,15 @@ body {
   font-family: 'Merriweather', serif;
 }
 #main {
+  position: relative;
+  box-sizing: border-box;
   width: 600px;
+  padding: 20px;
   margin: auto;
 }
 .button-xxxlarge {
   font-size: 50px;
-  width: 470px;
+  width: 560px;
   background: #04bfbf;
 }
 .button-xxxlarge:hover {
@@ -60,7 +63,7 @@ hr {
   margin: 40px 0 100px;
 }
 .demo-animation:active {
-  left: calc(100% - 40px);
+  left: calc(100% - 105px);
 }
 .demo-color {
   width: 200px;

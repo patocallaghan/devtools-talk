@@ -1,58 +1,173 @@
 ---
-title: "DevTool & ting"
+title: "10 Things"
 layout: "default"
 ---
 
-#DevTools
+#Beforehand
+1. turn off break on functionality
+2. turn off blackboxing
+3. Open style file
+4. Close all others
+5. Style tab
+6. State UI is off
+7. animation is off
+8. Empty Sublime
 
-##CSS
+#10 THINGS I USE (ALMOST) DAILY IN CHROME DEVTOOLS
 
-###States
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+## 1. SEARCHING
+
+* Go to Line Number
+* Fuzzy Search
+  * Files
+  * Functions
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+___
+
+## 2. FORCE CSS STATES
 
 <button class="button-xxxlarge pure-button"></button>
 
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 ___
 
-### Animations
+## 3. EDIT ANIMATIONS
+<a class="pure-button pure-button-primary demo-animation">Click Me!</a>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+___
 
+## 4. SCROLL INTO VIEW
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 <a class="pure-button pure-button-primary demo-animation">Click Me!</a>
 
 ___
 
-###Getting colors
+## 5. BREAK ON...
 
-<div class="demo-color"></div>
+<button id="toggle" class="pure-button button-success">Toggle Class</button>
 
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 ___
 
-##ELEMENTS
 
-* Scroll into View
-* Hide element
-* <button id="toggle" class="pure-button button-success">Toggle Class</button> + <button id="modify" class="pure-button">Modify Date</button>
+## 6. COMMAND LINE API
+`$0`, `$1`, `$2`.....`$4`
 
-    **DateTime**: <span id="modify-content"></span>
-* Event Listeners
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+___
+## 7. TEMP VARIABLES &amp; COPY
+<button id="temp">Temp</button>
+
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 ___
 
-##CONSOLE
+## 8. USE THE DEBUGGER
+* `debugger`
+* Inline local variables
+* Step in/out/over
 
-* `$_`
-* `$0`, `$1`, `$2`.....`$n`
-* `dir`
-* Temporary variables
-* `copy($0)`
-* `table`
-* `monitorEvents`
+<button id="simple-debugger">Debugger</button> <span id="debugger-content"></span>
 
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 ___
 
-##SEARCHING
-* Go to Line Number
-* Search By Selector
-* Search single file
-* Search all files
-* Fuzzy Search
-  * Files
-  * Functions
+## 9. CONDITIONAL BREAKPOINTS
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
 ___
+
+## 10. BLACKBOX SCRIPTS
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+___
+
+## THANKS!!
+
+Pat O'Callaghan === [@patocallaghan](https://www.twitter.com/patocallaghan) ==== [littleglitch.io](http://littleglitch.io)

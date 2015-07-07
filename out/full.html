@@ -1,0 +1,137 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>DevTool &amp; ting | DevTools</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="/styles/style.css">
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="know-your-devtools">Know your DevTools</h1>
+<h2 id="searching">SEARCHING</h2>
+<ul>
+<li>Go to Line Number</li>
+<li>Elements Tab: Search By Selector and Text</li>
+<li>Search single file</li>
+<li>Search all files</li>
+<li>Fuzzy Search<ul>
+<li>Files</li>
+<li>Functions</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="css">CSS</h2>
+<h3 id="states">States</h3>
+<button class="button-xxxlarge pure-button"></button>
+
+<hr>
+<h3 id="animations">Animations</h3>
+<p><a class="pure-button pure-button-primary demo-animation">Click Me!</a></p>
+<hr>
+<h3 id="getting-colors">Getting colors</h3>
+<div class="demo-color"></div>
+
+<hr>
+<h2 id="elements">ELEMENTS</h2>
+<ul>
+<li>Scroll into View</li>
+<li>Hide element</li>
+<li><button id="toggle" class="pure-button button-success">Toggle Class</button> + <button id="modify" class="pure-button">Modify Date</button>
+
+<p>  <strong>DateTime</strong>: <span id="modify-content"></span></p>
+</li>
+<li>Event Listeners</li>
+</ul>
+<hr>
+<h2 id="console">CONSOLE</h2>
+<h3 id="command-line-api">COMMAND LINE API</h3>
+<ul>
+<li><code>$_</code></li>
+<li><code>$0</code>, <code>$1</code>, <code>$2</code>.....<code>$4</code></li>
+<li><code>dir</code></li>
+<li>Temporary variables</li>
+<li><code>copy($0)</code></li>
+<li><code>table</code></li>
+<li><code>monitorEvents</code><form class="pure-form" action="">
+<input type="text">
+</form>
+
+</li>
+</ul>
+<h2 id="console-api">CONSOLE API</h2>
+<ul>
+<li><code>console.trace()</code><button id="trace">Trace Me</button></li>
+<li><code>debugger</code>
+<button id="simple-debugger">Debugger</button> <span id="debugger-content"></span></li>
+</ul>
+<hr>
+<h2 id="scripts">SCRIPTS</h2>
+<h3 id="debugger">DEBUGGER</h3>
+<ul>
+<li>Inline local variables</li>
+<li>Step in/out/over</li>
+<li>Conditional breakpoints</li>
+<li>Blackbox scripts</li>
+<li>Break on error</li>
+<li>Call stack with local context</li>
+<li>Live editing</li>
+<li>Selective code execution</li>
+</ul>
+<hr>
+
+    </div>
+    <script >(function(){
+	/* Did we just livereload? */
+var log = !!(localStorage && console && console.log && true);
+if ( log && localStorage.getItem('/docpad-livereload/reloaded') === 'yes' ) {
+	localStorage.removeItem('/docpad-livereload/reloaded');
+	console.log('LiveReload completed at', new Date())
+}
+
+/* Listen for the regenerated event and perform a reload of the page when the event occurs */
+var listen = function(){
+	var primus = new Primus('/docpad-livereload');
+	primus.on('data', function(data){
+		if ( data && data.message ) {
+			if ( data.message === 'generateBefore' ) {
+				if ( log ) {
+					console.log('LiveReload started at', new Date());
+				}
+				if ( typeof document.getElementsByTagName !== 'undefined' ) {
+	document.getElementsByTagName('html')[0].className += ' wait';
+}
+			}
+			else if ( data.message === 'generateAfter' ) {
+				if ( log ) {
+					localStorage.setItem('/docpad-livereload/reloaded', 'yes');
+				}
+				document.location.reload();
+			}
+		}
+	});
+};
+	/* Inject socket into our page */
+var inject = function(){
+	var t = document.createElement('script');
+	t.type = 'text/javascript';
+	t.async = 'async';
+	t.src = '/primus/primus.js';
+	t.onload = listen;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(t, s);
+};
+	if ( typeof Primus !== 'undefined' ) {
+		listen();
+	} else {
+		inject();
+	}
+})();</script><script defer="defer"  src="/scripts/twitter.js"></script><script defer="defer"  src="/scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  </body>
+</html>
