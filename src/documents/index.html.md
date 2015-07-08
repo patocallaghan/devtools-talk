@@ -1,19 +1,9 @@
 ---
-title: "10 Things"
+title: "9 Things"
 layout: "default"
 ---
 
-#Beforehand
-1. turn off break on functionality
-2. turn off blackboxing
-3. Open style file
-4. Close all others
-5. Style tab
-6. State UI is off
-7. animation is off
-8. Empty Sublime
-
-#10 THINGS I USE (ALMOST) DAILY IN CHROME DEVTOOLS
+#9 THINGS I USE (ALMOST) DAILY IN CHROME DEVTOOLS
 
 <br><br><br>
 <br><br><br>
@@ -26,7 +16,6 @@ layout: "default"
 <br><br><br>
 ## 1. SEARCHING
 
-* Go to Line Number
 * Fuzzy Search
   * Files
   * Functions
@@ -69,21 +58,7 @@ ___
 <br><br><br>
 ___
 
-## 4. SCROLL INTO VIEW
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<br><br><br>
-<a class="pure-button pure-button-primary demo-animation">Click Me!</a>
-
-___
-
-## 5. BREAK ON...
+## 4. BREAK ON...
 
 <button id="toggle" class="pure-button button-success">Toggle Class</button>
 
@@ -99,7 +74,7 @@ ___
 ___
 
 
-## 6. COMMAND LINE API
+## 5. COMMAND LINE API
 `$0`, `$1`, `$2`.....`$4`
 
 <br><br><br>
@@ -112,7 +87,7 @@ ___
 <br><br><br>
 <br><br><br>
 ___
-## 7. TEMP VARIABLES &amp; COPY
+## 6. TEMP VARIABLES &amp; COPY
 <button id="temp">Temp</button>
 
 <br><br><br>
@@ -126,7 +101,7 @@ ___
 <br><br><br>
 ___
 
-## 8. USE THE DEBUGGER
+## 7. USE THE DEBUGGER
 * `debugger`
 * Inline local variables
 * Step in/out/over
@@ -144,7 +119,7 @@ ___
 <br><br><br>
 ___
 
-## 9. CONDITIONAL BREAKPOINTS
+## 8. CONDITIONAL BREAKPOINTS
 <br><br><br>
 <br><br><br>
 <br><br><br>
@@ -156,7 +131,7 @@ ___
 <br><br><br>
 ___
 
-## 10. BLACKBOX SCRIPTS
+## 9. BLACKBOX SCRIPTS
 <br><br><br>
 <br><br><br>
 <br><br><br>

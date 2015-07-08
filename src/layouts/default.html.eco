@@ -14,7 +14,7 @@
     <div id="main">
       <%- @content %>
     </div>
-    <%- @getBlock("scripts").add(["/scripts/twitter.js", "/scripts/script.js"]).toHTML() %>
+    <%- @getBlock("scripts").add(["scripts/twitter.js", "scripts/script.js"]).toHTML() %>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
   </body>
 </html>
