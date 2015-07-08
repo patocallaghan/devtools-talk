@@ -1,0 +1,140 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Notes | DevTools</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <div id="main">
+      <h1 id="know-your-devtools-notes">Know your DevTools Notes</h1>
+<p>If you&#39;re like me you spend a vast majority of you day working in the browser and
+its devtools. My particular poison is Chrome, but Firefox/Safari/IE to a lesser
+degree have a lot of the same features, or more. To some people these things may be
+trivial and obvious but if you get a least one trick from this list I&#39;ll be happy.
+This will mainly just be a quick-fire list of things I find useful almost daily.
+Apologies to all windows users but any shortcuts I&#39;ll be talking about will be for
+Mac but they are all transferable to Windows if you know the specific incantation.</p>
+<h3 id="searching">SEARCHING</h3>
+<p>Lots of useful ways to find things in your code.</p>
+<ul>
+<li>Go to Line Number - If you know the particular number you want to go to then Ctrl + G &amp; Line number</li>
+<li>Elements Tab: Search By Selector and Text - <code>#modify</code>, <code>li button</code> Cmd + f</li>
+<li>Search single file - CMD + F <code>downTheRabbitHole</code> and Enter to cycle through them</li>
+<li>Search all files - Search across all files in your codebase. CMD + ALT + F <code>button</code>. Clicking on result opens it up in your preview pane</li>
+<li>Fuzzy Search - I use this an awful lot. It&#39;s like the fuzzy finder which you&#39;ll find in various text editors.<ul>
+<li>Files - CMD + O or P. Search the path and filename. Can be activated on any tab. Hit enter to open the file. <code>script</code></li>
+<li>Functions - CMD + Shift + P When you have the file you want, using this is a fuzzy finder to your functions within that file</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="css">CSS</h2>
+<h3 id="states">States</h3>
+<p>You can easily force the state of an element use either this checkbox or right
+clicking on the element. This comes in handy when you want to style either certain
+styles, or even combinations of styles. A good example would be an active and a hover state.</p>
+<button class="button-xxxlarge pure-button"></button>
+
+<hr>
+<h3 id="animations">Animations</h3>
+<p>CSS Animations can be a tricky thing to get right so the animation editor is pretty
+handy for tweaking animations until their right. Here I have a button which simply 
+updates its left position on click. There are several (boring) in-built easings
+but you can also customise the easing based on a bezier curve. You can also
+the speed or disable the animation entirely.</p>
+<p><a class="pure-button pure-button-primary demo-animation">Click Me!</a></p>
+<hr>
+<h3 id="getting-colors">Getting colors</h3>
+<p>Say you have a color in a weird format, using Shift+Click you get the versions of
+color you are interested in. You can also tweak the color and opacity by clicking
+on the color</p>
+<div class="demo-color"></div>
+
+<hr>
+<h2 id="elements">ELEMENTS</h2>
+<p>The Elements panel is the live view of your DOM.</p>
+<ul>
+<li>Scroll into View - if you have an element selected but you can&#39;t see it, but 
+would like to get it into view, right-click and select &quot;scroll into view&quot;</li>
+<li>Hide element - A handy little trick if you are investigating CSS or DOM related
+performance problems, or just want to make something disappear, just press &quot;h&quot;
+on any element and the element will disappear.</li>
+<li><button id="toggle" class="pure-button button-success">Toggle Class</button> + <button id="modify" class="pure-button">Modify Date</button>
+
+<p>  <strong>DateTime</strong>: <span id="modify-content"></span></p>
+<p>  if you find that some code is editing a certain element or attribute but you&#39;re
+  not entirely sure what is doing it, &quot;Breaking on subtree modifications&quot; will
+  will help you. Break on attribute modification, have a simple button which 
+  toggles between an error and success class. Break on subtree modification will
+  halt on the code which modifies any content within the selected element</p>
+</li>
+<li>Event Listeners - You can also see what events are registered on an element as
+stopping execution on the event POSSIBLY REMOVE THIS</li>
+</ul>
+<hr>
+<h2 id="console">CONSOLE</h2>
+<p>The console which we all should know is this little area down here. You type JS in, hit enter and it magically evaluates whatever you typed. Chrome implements two APIs for working in the Console. The Command Line API and the Console API. I find I spend a lot of my day doing various bits and bobs in here.</p>
+<h3 id="command-line-api">COMMAND LINE API</h3>
+<p>Selection of useful functions for carrying out common tasks. Whereas Console API can be called from a script the Command Line API can only be used in the console itself.</p>
+<ul>
+<li><code>$_</code> - returns the most recently evaluated expression. </li>
+<li><code>$0</code>, <code>$1</code>, <code>$2</code>.....<code>$4</code> - The Command Line API remembers the last 5 DOM elements you had selected in the Elements panel. <code>$0</code> being the most recent. Useful for interacting with the DOM properties of the element. <code>innerHTML</code>, <code>nodeType</code> etc Shows HTML view. Vice-versa, right-click to reveal in the Elements panel.</li>
+<li><code>dir</code> - Dir is an alternative function for viewing a DOM element. While $n shows the HTML view, dir shows the DOM Object view. Just pass it the element you want to expand.</li>
+<li>Temporary variables. It&#39;s not the Command Line API as such but its a handy feature all the same. Another handy little feature is creating temp variable just by using your mouse. Click on whatever object you want to create a reference for right-click and you now have a temp variable which you can work with.</li>
+<li><code>copy($0)</code> - Allows you to copy text to your clipboard. Works well in tandem with the temporary globals and <code>$_</code> function. <code>window[&#39;demo_api&#39;]</code>, create temp var and then <code>copy($_)</code>, copy and paste</li>
+<li><code>table</code> - used to output object data in a more readable format. </li>
+<li><code>monitorEvents</code> - Quickly monitor any events which occur on an element. You mightn&#39;t know exactly what code is being run when an event on an element, helps you narrow it down. <code>monitorEvents(object, event)</code>, e.g. <code>monitorEvents($0, &#39;keydown)</code>. <code>unmonitorEvents</code> turns it back off. Handy for working out keycodes from inputs</li>
+</ul>
+<h3 id="console-api">CONSOLE API</h3>
+<p>While Command Line API is only accessible by typing into the console. The Console API is a set of functions which while you can type into your console, you can also insert into your code. We all know console.log(&#39;Biscuits!&#39;). There are other lines but really the only one that I personally use is:</p>
+<ul>
+<li><code>console.trace()</code> - produces a stack trace. Useful if debugging an issue and you know a function is being called but you can&#39;t work out from where.</li>
+<li><code>debugger</code> -  Stops the script execution and allows you to step through your code, and view its current state. If there&#39;s a single thing which you guys could take away from this talk is to get away from the idea of littering your code with <code>console.log</code>. There&#39;s sometimes still value in that but the debugger is much more powerful. Do yourselves a favour and give it a go.</li>
+</ul>
+<hr>
+<h2 id="scripts">SCRIPTS</h2>
+<h3 id="debugger">DEBUGGER</h3>
+<ul>
+<li>Inline local variables - view the live state of local variables</li>
+<li>Step in/out/over</li>
+<li>Conditional breakpoints - one pain point of breakpoints is you have one in some code called in a loop. Conditional breakpoints are great as they only stop the script execution if your conditional asserts true. value === 9</li>
+<li>Live editing - <code>var temp = value * 2</code>;</li>
+<li>Blackbox scripts - Another annoying thing is if you want to step into a function which takes a function call to another library as a parameter. You aren&#39;t interested in that bit of code but would rather just drop into the function you&#39;re interested in. You want to drop inside <code>showTotal</code> but you&#39;ll drop inside <code>jQuery</code> first as it&#39;s evaluated first. Blackboxing a script allows you to say never drop down into this file when debugging. Usually 3rd party vendor files.</li>
+<li>Call stack with local context</li>
+<li>Selective code execution - Ctrl + Shift + E</li>
+<li>Break on error - If you have an error in your code, you can trap it and look at the current state when the error occurs</li>
+</ul>
+<hr>
+<h2 id="miscellaneous-possibly-remove-this-section">MISCELLANEOUS - POSSIBLY REMOVE THIS SECTION</h2>
+<ul>
+<li>Preserve log upon navigation - </li>
+<li>Share timeline</li>
+<li>Console styling</li>
+</ul>
+<h2 id="wrap-up">WRAP UP</h2>
+<p>While some people invest a lot of time setting up their editor and becoming really productive using it, it also pays to know the ins and outs of your devtools of choice.</p>
+<p>10 Tips &amp; Tricks</p>
+<ol>
+<li>Searching: Go to Line Number || Fuzzy Search</li>
+<li>Force CSS State</li>
+<li>Scroll into View</li>
+<li>Break on...: Attributes and subtree modifications</li>
+<li>Command Line API: <code>$_</code>, <code>$0</code>....<code>$4</code></li>
+<li>Temp variables and <code>copy</code></li>
+<li>console.trace()</li>
+<li>USE THE DEBUGGER!!</li>
+<li>Blackbox Scripts
+10.Conditional Breakpoints</li>
+</ol>
+
+    </div>
+    <script defer="defer"  src="scripts/twitter.js"></script><script defer="defer"  src="scripts/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  </body>
+</html>

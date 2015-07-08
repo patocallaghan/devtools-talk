@@ -1,0 +1,85 @@
+/*
+ * #04bfbf
+ * #cafcd8
+ * #f7e967
+ * #a9cf54
+ * #588f27
+ */
+body {
+  font-family: 'Merriweather', serif;
+}
+#main {
+  position: relative;
+  box-sizing: border-box;
+  width: 600px;
+  padding: 20px;
+  margin: auto;
+}
+.button-xxxlarge {
+  font-size: 50px;
+  width: 560px;
+  background: #04bfbf;
+}
+.button-xxxlarge:hover {
+  background: #cafcd8;
+}
+.button-xxxlarge:focus {
+  background: #f7e967;
+}
+.button-xxxlarge:active {
+  background: #a9cf54;
+}
+.button-xxxlarge:before {
+  content: 'Big Ass Button';
+}
+.button-xxxlarge:hover:before {
+  content: 'Hover';
+}
+.button-xxxlarge:focus:before {
+  content: 'Focus';
+}
+.button-xxxlarge:active:before {
+  content: 'Active';
+}
+.button-xxxlarge:active:hover:before {
+  content: 'Hover and Active';
+}
+h1 {
+  font-size: 5em;
+}
+h2 {
+  font-size: 3.5em;
+}
+h3 {
+  font-size: 2.5em;
+}
+
+.demo-animation {
+  transition: all 500ms cubic-bezier(1.000, 0.000, 0.000, 1.000);
+  position: relative;
+  left: 0;
+}
+hr {
+  margin: 40px 0 100px;
+}
+.demo-animation:active {
+  left: calc(100% - 105px);
+}
+.demo-color {
+  width: 200px;
+  height: 200px;
+  background: hsl(74, 64%, 59%);
+}
+.button-success,
+.button-error {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+
+}
+.button-success {
+  background: rgb(28, 184, 65); /* this is a green */
+}
+.button-error {
+  background: rgb(202, 60, 60); /* this is a maroon */
+}
